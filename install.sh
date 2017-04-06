@@ -61,29 +61,18 @@ echo "[+] Installing pyserial 2.6"
 pip install https://pypi.python.org/packages/source/p/pyserial/pyserial-2.6.tar.gz
 
 echo "[+] Downloading pylibpcap..."
-pip install https://sourceforge.net/projects/pylibpcap/files/latest/download?source=files#egg=pylibpcap
+apt-get install python-libpcap
 
 echo "[+] Downloading dpkt..."
-pip install https://dpkt.googlecode.com/files/dpkt-1.8.tar.gz
+pip install dpkt
 
 echo "[+] Installing patched version of scapy..."
 pip install ./setup/scapy-latest-snoopy_patch.tar.gz
 
-# Only run this on your client, not server:
-#read -r -p  "[ ] Do you want to download, compile, and install aircrack? [y/n] " response
-#if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
-#then
-#    echo "[+] Downloading aircrack-ng..."
-#    wget http://download.aircrack-ng.org/aircrack-ng-1.2-beta1.tar.gz
-#    tar xzf aircrack-ng-1.2-beta1.tar.gz
-#    cd aircrack-ng-1.2-beta1
-#    make
-#    echo "[-] Installing aircrack-ng"
-#    make install
-#    cd ..
-#    rm -rf aircrack-ng-1.2-beta1*
-#fi
+echo "[+] Installing libssl-dev..."
+apt-get -y install libssl-dev
 
+    
 echo "[+] Creating symlinks to this folder for snoopy.py."
 
 echo "sqlite:///`pwd`/snoopy.db" > ./transforms/db_path.conf
@@ -96,4 +85,5 @@ chmod +x /usr/bin/snoopy_auth
 chmod +x /usr/bin/sslstrip_snoopy
 
 echo "[+] Done. Try run 'snoopy' or 'snoopy_auth'"
+echo "[+] If errors occur when trying to run Snoopy, make sure aircrack-ng is installed and your wifi adapter is in monitor mode"
 echo "[I] Ensure you set your ./transforms/db_path.conf path correctly when using Maltego"
