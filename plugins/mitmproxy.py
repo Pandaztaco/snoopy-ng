@@ -14,7 +14,7 @@ import datetime
 from threading import Thread
 import os
 from includes.fonts import *
-from includes.mitm import *
+#from includes.mitm import *
 
 
 class Snoop(Thread):
