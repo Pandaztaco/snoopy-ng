@@ -265,7 +265,6 @@ def main():
 (___/(_)\_)(_____)(_____)(__)   (__)
                         %sVersion: 3.0%s
 %sCode%s:\t glenn@sensepost.com // @glennzw
-%sUpdates%s:\t www.github.com // @Pandaztaco
 %sVisit%s:\t www.sensepost.com // @sensepost
 %sLicense%s: Non-commercial use
 """ %(BB,NB,GR,G,GR,G,GR,G)
@@ -284,6 +283,10 @@ includes extra functionality such as:
     * Extra transforms
     * Web interface
     * Prebuilt drones
+
+Get in contact (%sglenn@sensepost.com / research@sensepost.com%s) if
+you'd like to engage with us.
+
 Anyway, the license is below, please accept it
 before continuing.
 """ % (GR,G)
@@ -360,7 +363,7 @@ you'd like to engage with us.""" % (GR,G)
                 print GR + "\tInfo:" + G + "\t\t%s"  % show.get('info')
                 for p in show.get('parameter_list'):
                     print GR + "\tParameter:" + G + "\t%s" %p[0]
-                    print G + "\t\t\t â†³ %s" % p[1]
+                    print G + "\t\t\t ↳ %s" % p[1]
                  
             exit(0)
         print "[+] Plugins available:"
@@ -375,7 +378,7 @@ you'd like to engage with us.""" % (GR,G)
                     if param_list and options.list > 2:
                         for p in param_list:
                             print GR + "\tParameter:" + G + "\t%s" %p[0]
-                            print G + "\t\t\t â†³ %s" % p[1]
+                            print G + "\t\t\t ↳ %s" % p[1]
                     print "\n"
         sys.exit(0)
 
