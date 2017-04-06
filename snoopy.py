@@ -265,7 +265,7 @@ def main():
 (___/(_)\_)(_____)(_____)(__)   (__)
                         %sVersion: 3.0%s
 %sCode%s:\t glenn@sensepost.com // @glennzw
-%sUpdates%s:\t github.com // @Pandaztaco
+%sUpdates%s:\t www.github.com // @Pandaztaco
 %sVisit%s:\t www.sensepost.com // @sensepost
 %sLicense%s: Non-commercial use
 """ %(BB,NB,GR,G,GR,G,GR,G)
