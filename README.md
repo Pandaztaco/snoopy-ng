@@ -12,12 +12,13 @@
                                             | $$      |  $$$$$$/
                                             |__/       \______/
                             
-                                                   Version: 2.0
+                                                   Version: 3.0
     Code:    glenn@sensepost.com // @glennzw
+    Updates:   www.github.com // @Pandaztaco
     Visit:   www.sensepost.com // @sensepost
     License: Non-commercial use
 
-Welcome to Snoopy Version 2.0!
+Welcome to Snoopy Version 3.0!
 
 0. Quick Setup
 ==============
