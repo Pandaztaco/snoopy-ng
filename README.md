@@ -19,7 +19,9 @@
     License: Non-commercial use
 
 Welcome to Snoopy Version 3.0!
-
+===================================
+This method of exploitation is slowly being patched, and from my testing, as of 2017, only seems to work on Android platforms. If this ever becomes fully patched, I would reccomend the Karma module on FruityWifi.
+===================================
 0. Quick Setup (Raspberry Pi compatible)
 ==============
 Strapped for time? Try this: Run the same install.sh on both your Raspberry Pi and Server
@@ -261,5 +263,3 @@ Extra Notes:
 **Client**
 
 		root@client:~# snoopy -m wifi -m local_sync:server_url=http://1.1.1.1:9001/ -d myDrone -l London -k secretkey -s http://1.1.1.1:9001/
-=========================================================
-This method of exploitation is slowly being patched, and from my testing, as of 2017, only seems to work on Android platforms. If this ever becomes fully patched, I would reccomend the Karma module on FruityWifi.
