@@ -20,9 +20,9 @@
 
 Welcome to Snoopy Version 3.0!
 
-0. Quick Setup
+0. Quick Setup (Raspberry Pi compatible)
 ==============
-Strapped for time? Try this:
+Strapped for time? Try this: Run the same install.sh on both your Raspberry Pi and Server
 
 **To install and setup Snoopy:**
 
